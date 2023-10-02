@@ -29,14 +29,15 @@ const Template = ({ title, desc1, desc2, image, formtype, setIsLoggedIn }) => {
           <div className="-bg--surface4-dark h-[2px] w-full"></div>
         </div >
 
-        <button className="mt-5 w-full flex justify-center items-center -bg--surface1-dark py-3 rounded-md 
+        <button className="mt-2 w-full flex justify-center items-center -bg--surface1-dark py-3 rounded-md 
         font-semibold border-[1px] -text--text1-dark">
             <FcGoogle/>
             <p className="pl-3">Sign Up with Google</p></button>
       </div>
 
-      <div className="relative w-11/12 max-w-[450px] z-0 p-3">
+      <div className="relative w-11/12 max-w-[400px] z-0 p-3 ">
         <img
+        className=""
         src={image} 
         alt="login img"
         loading="lazy"

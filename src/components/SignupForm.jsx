@@ -48,21 +48,21 @@ const SignupForm = ({ setIsLoggedIn }) => {
     <div className="flex max-w-max -bg--surface3-dark p-1 gap-2 rounded-full -text--text2-dark font-semibold m-3">
     <button
     className={
-      `${accountType==="student"?("-bg--surface1-dark -text--text1-dark"):("-bg--surface3-dark")} py-2 px-5 rounded-full`
+      `${accountType==="student"?("-bg--surface1-dark -text--text1-dark"):("-bg--surface3-dark")} py-1 px-5 rounded-full`
     }
     onClick={()=>setAccountType("student")}
     >Student</button>
 
     <button
     className={
-      `${accountType==="instructor"?("-bg--surface1-dark -text--text1-dark"):("-bg--surface3-dark")} py-2 px-5 rounded-full`
+      `${accountType==="instructor"?("-bg--surface1-dark -text--text1-dark"):("-bg--surface3-dark")} py-1 px-5 rounded-full`
     }
     onClick={()=>setAccountType("instructor")}
     
     >Instructor</button>
   </div>
 
-    <form className="mt-4 w-full flex flex-col gap-5" onSubmit={submitHandler}>
+    <form className="mt-2 w-full flex flex-col gap-3" onSubmit={submitHandler}>
 
 
       <div className="flex w-full gap-3">
@@ -72,11 +72,12 @@ const SignupForm = ({ setIsLoggedIn }) => {
           </p>
 
           <input
-            className="-bg--surface4-dark mt-1 border rounded-md px-2 w-full py-2"
+            className="-bg--surface4-dark mt-1 border rounded-md px-2 w-full py-1"
             required
             type="text"
             name="firstName"
             onChange={changeHandler}
+            placeholder="Enter First Name"
             value={formData.firstName}
           />
         </label>
@@ -87,10 +88,11 @@ const SignupForm = ({ setIsLoggedIn }) => {
           </p>
 
           <input
-            className="-bg--surface4-dark mt-1 border rounded-md px-2 w-full py-2"
+            className="-bg--surface4-dark mt-1 border rounded-md px-2 w-full py-1"
             required
             type="text"
             name="lastName"
+            placeholder="Enter Last Name"
             onChange={changeHandler}
             value={formData.lastName}
           />
@@ -102,11 +104,12 @@ const SignupForm = ({ setIsLoggedIn }) => {
           Email Address <sup className="text-red-500">*</sup>
         </p>
         <input
-          className="-bg--surface4-dark mt-1 border rounded-md px-2 w-full py-2"
+          className="-bg--surface4-dark mt-1 border rounded-md px-2 w-full py-1"
           required
           type="email"
           name="email"
           onChange={changeHandler}
+          placeholder="Enter Email Address"
           value={formData.email}
         />
       </label>
@@ -117,15 +120,16 @@ const SignupForm = ({ setIsLoggedIn }) => {
             Password <sup className="text-red-500">*</sup>
           </p>
           <input
-            className="-bg--surface4-dark mt-1 border rounded-md px-2 w-full py-2"
+            className="-bg--surface4-dark mt-1 border rounded-md px-2 w-full py-1"
             required
             type={showPassword ? "password" : "text"}
+            placeholder="Enter Password"
             name="password"
             onChange={changeHandler}
             value={formData.password}
           />
 
-          <span className="absolute right-[10px] top-[37px]"  onClick={() => setShowPassword((prev) => !prev)}>
+          <span className="absolute right-[10px] top-[32px]"  onClick={() => setShowPassword((prev) => !prev)}>
             {showPassword ? <AiFillEyeInvisible fontSize={25} /> : <AiFillEye fontSize={25}/>}
           </span>
         </label>
@@ -135,20 +139,21 @@ const SignupForm = ({ setIsLoggedIn }) => {
             Confirm Password <sup className="text-red-500">*</sup>
           </p>
           <input
-            className="-bg--surface4-dark mt-1 border rounded-md px-2 w-full py-2"
+            className="-bg--surface4-dark mt-1 border rounded-md px-2 w-full py-1"
             required
             type={showConfirmPassword ? "password" : "text"}
             name="confirmPassword"
+            placeholder="Confirm Password"
             onChange={changeHandler}
             value={formData.confirmPassword}
           />
 
-          <span className="absolute right-[10px] top-[37px]"  onClick={() => setShowConfirmPassword((prev) => !prev)}>
+          <span className="absolute right-[10px] top-[32px]"  onClick={() => setShowConfirmPassword((prev) => !prev)}>
             {showConfirmPassword ? <AiFillEyeInvisible fontSize={25} /> : <AiFillEye  fontSize={25}/>}
           </span>
         </label>
       </div>
-      <button className="-bg--brand-dark -text--text1-dark font-semibold py-3 rounded-md my-2" type="submit">Create Account</button>
+      <button className="-bg--brand-dark -text--text1-dark font-semibold py-3 rounded-md my-1" type="submit">Create Account</button>
     </form>
   
     </>);
