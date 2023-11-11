@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/study-notion-app/static/css/main.b7736f8b.css",
-    "main.js": "/study-notion-app/static/js/main.e844476b.js",
-    "static/media/signup.jpg": "/study-notion-app/static/media/signup.cc12dc2472b3bec36baa.jpg",
-    "static/media/login.jpg": "/study-notion-app/static/media/login.93f1d114e7d4eae5a606.jpg",
-    "static/media/Logo.svg": "/study-notion-app/static/media/Logo.0d90853fa1468dbe2d8d82c0ea06b8b1.svg",
-    "index.html": "/study-notion-app/index.html",
-    "main.b7736f8b.css.map": "/study-notion-app/static/css/main.b7736f8b.css.map",
-    "main.e844476b.js.map": "/study-notion-app/static/js/main.e844476b.js.map"
+    "main.css": "/react-study-notion-app/static/css/main.b7736f8b.css",
+    "main.js": "/react-study-notion-app/static/js/main.5128ba75.js",
+    "static/media/signup.jpg": "/react-study-notion-app/static/media/signup.cc12dc2472b3bec36baa.jpg",
+    "static/media/login.jpg": "/react-study-notion-app/static/media/login.93f1d114e7d4eae5a606.jpg",
+    "static/media/Logo.svg": "/react-study-notion-app/static/media/Logo.0d90853fa1468dbe2d8d82c0ea06b8b1.svg",
+    "index.html": "/react-study-notion-app/index.html",
+    "main.b7736f8b.css.map": "/react-study-notion-app/static/css/main.b7736f8b.css.map",
+    "main.5128ba75.js.map": "/react-study-notion-app/static/js/main.5128ba75.js.map"
   },
   "entrypoints": [
     "static/css/main.b7736f8b.css",
-    "static/js/main.e844476b.js"
+    "static/js/main.5128ba75.js"
   ]
 }
